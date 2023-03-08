@@ -1,0 +1,63 @@
+.dueño{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dueño__auxiliar{
+        width: 100%;
+        margin: 4rem;
+        .dueño__titulo{
+
+        }
+        .dueño__parrafo{
+            font-family: $fuentePrincipal;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        .dueño__banner{
+            background-image: url(../images/banner-sucursal.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        
+            width: 100%;
+            min-height: 25rem;
+        
+            overflow: hidden;
+            
+        
+            margin-top: 2rem;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            border-radius: 1.4rem;
+        
+            transition: border 400ms ease-out;
+            &:hover{
+                border: 3px solid $Primario;
+            }
+            .dueño__banner--a{
+                font-size: 4rem;
+                font-weight: bold;
+                color: $Primario;
+                transition: 1s;
+                &::after{
+                    content: "";
+                    height: .2rem;
+                    width: 0;
+                    background-color: $Primario;
+                    display: block;
+                    transition: all 500ms;
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }

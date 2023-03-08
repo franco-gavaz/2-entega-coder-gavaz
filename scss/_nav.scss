@@ -1,0 +1,31 @@
+.borde{
+    border-bottom: 2px solid $Primario;
+    border-top: 2px solid $Primario;
+    .nav__img{
+        width: 8rem;
+        height: 8rem;
+    
+        transition: all .5s ease;
+    
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+.subrayado {
+	&::after {
+		content: "" ;
+		height: 0.3rem; 
+		width: 0 ;
+		background-color: $Primario;
+		display: block ;
+		transition: all 400ms ease; 
+    }
+	&:hover {
+		&::after {
+			width: 100%;
+            }
+        }
+    }

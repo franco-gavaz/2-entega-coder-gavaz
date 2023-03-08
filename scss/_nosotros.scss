@@ -1,0 +1,47 @@
+/* pagina nosotros*/
+.historia{
+    width: 100%;
+    margin-top: 4rem;
+    padding: 1rem;
+    .historia__titulo{
+        margin-bottom: 4rem;
+    }
+    .historia__contenido{
+        .historia__flex{
+        .historia__primerParrafo{
+            font-size: 2rem;
+            font-family: $fuentePrincipal;
+            text-align: justify;
+        }
+        .historia__img{
+            height: auto;
+            width: 100%;
+            border-radius: 1rem;
+        }
+        }
+        
+        .historia__segundoParrafo{
+            font-size: 2rem;
+            font-family: $fuentePrincipal;
+            text-align: justify;
+            margin-top: 1.5rem;
+        }
+    }
+}
+@media (min-width:1300px ) {
+    .historia{
+        margin: 4rem auto;
+        width: 70%;
+    }
+    .historia__flex{
+    
+        display: flex;
+        justify-content: center;
+        
+        gap: 3rem;
+    }
+    .historia .historia__img{
+        height: 40rem;
+
+    }
+}

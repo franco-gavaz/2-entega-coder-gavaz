@@ -1,0 +1,30 @@
+.main__image{
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 50rem;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main__texto{
+        h1{
+            margin: 0;
+            font-size: 6.6rem;
+            color: $blanco;
+            span{
+                border: 6px solid $Secundario;
+                padding: .6rem 1.4rem;
+                display: inline-block;
+            }
+        }
+        .cen{
+            margin: 2rem;
+            display: block;
+            font-size: 2.2rem;
+            color: $blanco;
+            text-align: center;
+            font-family: $fuentePrincipal;
+        }
+    }
+}
