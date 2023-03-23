@@ -1,0 +1,87 @@
+main{
+    .contenedor-sucursal{
+        margin: 3rem auto;
+        width: min(90%, 100rem);
+        .contenedor-texto{
+            .sucursal-parrafo{
+                font-size: 2rem;
+                text-align: justify;
+            }
+            ul{
+                li{
+                    font-size: 2rem;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                    span{
+                        font-size: 2.3rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .section-form{
+        margin-top: 3rem;
+        .contenedor-formulario{
+            .contenedor-input-franquicia{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+                &:nth-last-child(2){
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 1rem;
+                }
+                .label-franquicia{
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+                .input-franquicia{
+                    width: 100%;
+                    height: 4rem;
+                    border: 1px solid $Primario;
+                    border-radius: 5px;
+                    font-size: 2rem;
+                }
+                .input-franquicia-radio{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .textArea-franquicia{
+                    height: 10rem;
+                }
+            }
+        }
+        .button-sucursal{
+            display: flex;
+            justify-content: end;
+            button{
+                padding: 1rem;
+                align-self:end;
+                border: 2px solid $PrimarioOscuro;
+                border-radius: 4    px;
+                font-size: 2rem;
+                background-color: $blanco;
+                font-family: $fuentePrincipal;
+                transition: all 400ms ease;
+                &:hover{
+                    background-color: $PrimarioOscuro;
+                    color: $blanco;
+
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width:768px ) {
+    .section-form{
+        .contenedor-formulario{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+}

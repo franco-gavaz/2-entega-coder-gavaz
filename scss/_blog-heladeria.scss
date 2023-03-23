@@ -1,0 +1,39 @@
+
+.main-blog{
+    .blog{
+        width: min(90%, 120rem);
+        .entrada{
+            border-bottom: 1px solid $Primario;
+            margin-bottom: 2rem;
+            &:last-of-type{
+                border: none;
+            }
+            .entrada_contenido{
+                h4{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+                .boton{
+                    display: block;
+                    font-family: $fuentePrincipal;
+                    color: $blanco;
+                    text-align: center;
+                    padding: 1rem 3rem;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    margin-bottom: 2rem;
+                    border: none;
+                    text-decoration: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .boton--primario{
+                    background-color: $negro;
+                }
+            }
+        }
+    }
+}

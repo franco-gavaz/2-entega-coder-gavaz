@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
-    <meta name="description" content="pagina web de Nosotros de heladeria">
-    <meta name="kewwords" content="Heladeria, sucursal,historia, gavaz">
-    <title>Nosotros</title>
+    <meta name="description" content="pagina web de blog de heladeria">
+    <meta name="kewwords" content="Heladeria, preguntas, blog, gavaz">
+    <title>Blog</title>
 </head>
 <body>
 
@@ -38,10 +38,10 @@
                             <a  class="nav-link  subrayado color--a" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="fs-2 nav-item me-2">
-                            <a class="nav-link subrayado active color--a " href="./Nostros.html">Nosotros</a>
+                            <a class="nav-link subrayado  color--a " href="./Nostros.html">Nosotros</a>
                         </li>
                         <li class="fs-2 nav-item me-2">
-                            <a class="nav-link subrayado color--a" href="./sucursal.html">Tu sucursal</a>
+                            <a class="nav-link subrayado active color--a" href="./sucursal.html">Tu sucursal</a>
                         </li>
                         <li class="fs-2 nav-item me-2">
                             <a class="nav-link subrayado color--a" href="./contacto.html">Contacto</a>
@@ -51,52 +51,69 @@
             </div>
         </nav>
     </header>
-    <main>
+
+
+
+
+
+    <main class="main-blog">
+        
         <div class="main__image">
             <div class="main__texto">
-                <h1><span>NOSOTROS</span></h1>
+                <h1><span>Blog de Heladeros</span></h1>
                 <span class="cen">Tu heladeria preferida</span>
                 
             </div>
         </div>
+  
+        <section class="blog">
+            <h3>Nuestro blog</h3>
 
-        <section class="historia">
-
-            <h1 class="historia__titulo">HELADERIA GAVAZ</h1>
-
-            <div class="historia__contenido">
-                <div class="historia__flex">
-                    <p class="historia__primerParrafo">Somos una familia de heladeros con una larga tradición en la elaboración de helados artesanales. Nuestra historia comenzó hace décadas, cuando nuestros abuelos comenzaron a hacer helados en su casa y a venderlos en su comunidad local.
-
-                    Desde entonces, hemos pasado de generación en generación el arte de hacer helados de la manera más natural y auténtica posible. Hemos perfeccionado nuestras recetas a lo largo de los años, utilizando solo los mejores ingredientes naturales y locales para hacer helados deliciosos y cremosos.</p>
-                    <img class="historia__img" src="../images/antigua.jpg" alt="">
-                    
+            <article class="entrada">
+                <div class="entrada_imagen">
+                    <img class="img-w100" loading="lazy" src="../images/abuelos-bailando.jpg" alt="imagen-entrada1">
                 </div>
-                
-                <p class="historia__segundoParrafo">Nos enorgullece ser una empresa familiar, y nos esforzamos por crear una experiencia cálida y acogedora para nuestros clientes. Creemos que nuestros helados no solo son deliciosos, sino también una forma de conectar con la comunidad y con nuestras raíces. la calidad del producto es fundamental. Desde la selección de ingredientes hasta la elaboración del helado, se busca ofrecer siempre la mejor calidad posible para satisfacer las expectativas de los clientes. Además creemos que el compromiso con el cliente es un valor clave en una empresa familiar de heladeros. Se busca crear una relación cercana y duradera con los clientes, ofreciendo un servicio excepcional y siempre buscando superar sus expectativas.</p>
-                <p class="historia__segundoParrafo">Gracias por visitar nuestra heladería familiar, esperamos que disfruten de nuestros helados tanto como nosotros disfrutamos haciendo cada uno de ellos. ¡Bienvenidos!</p>
-            </div>
-            
+                <div class="entrada_contenido">
+                    <h4 class="no-margin">Prueban que comer helado hace mas felices a las personas</h4>
+                    <p>ESTUDIO DEL INSTITUTO DE PSIQUIATRIA DE LONDRES Prueban que comer helado hace más felices a las personas  Un grupo de científicos del Instituto de Psiquiatría …</p>
+                    <a href="#" class="boton boton--primario">Leer entrada</a>
+                </div>
+            </article> <!--Primera entrada-->
+
+
+
+
+            <article class="entrada">
+                <div class="entrada_imagen">
+                    <img class="img-w100" loading="lazy" src="../images/veguenza-bailando.jpg" alt="imagen-entrada2">
+                </div>
+                <div class="entrada_contenido">
+                    <h4 class="no-margin">Los helados y su importancia nutricional</h4>
+                    <p>Son muchos los países donde el consumo de helados es prácticamente continuo sea cual sea la estación del año. Esta tendencia se esta empezando a …</p>
+                    <a href="#" class="boton boton--primario">Leer entrada</a>
+                </div>
+            </article> <!--Segunda entrada-->
+
+
+
+
+            <article class="entrada">
+                <div class="entrada_imagen">
+                    <img class="img-w100" loading="lazy" src="../images/personas-bailando.jpg" alt="imagen-entrada3">
+                </div>
+                <div class="entrada_contenido">
+                    <h4 class="no-margin">Los beneficios de comer helado</h4>
+                    <p>La forma de comer ha cambiado y hay que aprender a utilizar nuevos alimentos conservando la salud sin engordarDurante años hemos pensado que no era …
+                    </p>
+                    <a href="#" class="boton boton--primario">Leer entrada</a>
+                </div>
+            </article> <!--Tercera entrada-->
         </section>
-
-
         
-
-
-
-
-
-        <section class="dueño">
-            <div class="dueño__auxiliar">
-                <h2 class="dueño__titulo">Quiero ser dueño</h2>
-                <p class="dueño__parrafo">Si estás buscando una oportunidad de negocio, te invito a unirte a nuestra franquicia. Ofrecemos una gran oportunidad de crecimiento y desarrollo en el mundo de los negocios.</p>
-                <div class="dueño__banner">
-                    <a class="dueño__banner--a" href="#">Quiero ser parte</a>
-                </div>
-            </div>
-        </section>
-
     </main>
+
+
+
     <footer class="footer">
         <div class="footer-grid">
             <div class="contenedor-texto-footer">

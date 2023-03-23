@@ -62,7 +62,7 @@ a {
 }
 
 .header {
-  padding: 0.4rem 0 0.4rem 0;
+  padding: 0;
 }
 .header .header__titulo {
   color: #000;
@@ -421,4 +421,113 @@ a {
   .form {
     width: 50%;
   }
+}
+main .contenedor-sucursal {
+  margin: 3rem auto;
+  width: min(90%, 100rem);
+}
+main .contenedor-sucursal .contenedor-texto .sucursal-parrafo {
+  font-size: 2rem;
+  text-align: justify;
+}
+main .contenedor-sucursal .contenedor-texto ul li {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+main .contenedor-sucursal .contenedor-texto ul li span {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+main .section-form {
+  margin-top: 3rem;
+}
+main .section-form .contenedor-formulario .contenedor-input-franquicia {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+main .section-form .contenedor-formulario .contenedor-input-franquicia:nth-last-child(2) {
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+main .section-form .contenedor-formulario .contenedor-input-franquicia .label-franquicia {
+  font-size: 2rem;
+  cursor: pointer;
+}
+main .section-form .contenedor-formulario .contenedor-input-franquicia .input-franquicia {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #F984D9;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+main .section-form .contenedor-formulario .contenedor-input-franquicia .input-franquicia-radio {
+  display: flex;
+  flex-direction: row;
+}
+main .section-form .contenedor-formulario .contenedor-input-franquicia .textArea-franquicia {
+  height: 10rem;
+}
+main .section-form .button-sucursal {
+  display: flex;
+  justify-content: end;
+}
+main .section-form .button-sucursal button {
+  padding: 1rem;
+  align-self: end;
+  border: 2px solid #9F558A;
+  border-radius: 4 px;
+  font-size: 2rem;
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  transition: all 400ms ease;
+}
+main .section-form .button-sucursal button:hover {
+  background-color: #9F558A;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .section-form .contenedor-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.main-blog .blog {
+  width: min(90%, 120rem);
+}
+.main-blog .blog .entrada {
+  border-bottom: 1px solid #F984D9;
+  margin-bottom: 2rem;
+}
+.main-blog .blog .entrada:last-of-type {
+  border: none;
+}
+.main-blog .blog .entrada .entrada_contenido h4 {
+  font-size: 2.5rem;
+}
+.main-blog .blog .entrada .entrada_contenido p {
+  font-size: 1.5rem;
+}
+.main-blog .blog .entrada .entrada_contenido .boton {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border: none;
+  text-decoration: none;
+}
+.main-blog .blog .entrada .entrada_contenido .boton:hover {
+  cursor: pointer;
+}
+.main-blog .blog .entrada .entrada_contenido .boton--primario {
+  background-color: #000;
 }/*# sourceMappingURL=estilo.css.map */
