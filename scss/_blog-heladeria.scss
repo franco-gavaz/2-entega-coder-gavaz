@@ -1,12 +1,24 @@
-
+//BLOG
 .main-blog{
     .blog{
-        width: min(90%, 120rem);
+        width:90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        h3{
+
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
         .entrada{
             border-bottom: 1px solid $Primario;
             margin-bottom: 2rem;
             &:last-of-type{
                 border: none;
+            }
+            .entrada_imagen{
+                img{
+                    width: 100%;
+                }
             }
             .entrada_contenido{
                 h4{
@@ -14,6 +26,7 @@
                 }
                 p{
                     font-size: 1.5rem;
+                    text-transform:capitalize;
                 }
                 .boton{
                     display: block;
@@ -31,9 +44,18 @@
                     }
                 }
                 .boton--primario{
-                    background-color: $negro;
+                    background-color: $PrimarioOscuro;
                 }
             }
         }
+    }
+}
+
+@media (min-width:768px ){
+    .main-blog{
+        .blog{
+            width:70rem;
+
+        } 
     }
 }

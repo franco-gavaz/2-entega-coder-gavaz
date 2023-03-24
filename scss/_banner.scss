@@ -1,3 +1,4 @@
+//BANNER
 .main__image{
     background: url(../images/banner.jpg) no-repeat center;
     background-size: cover;
@@ -12,6 +13,7 @@
             margin: 0;
             font-size: 6.6rem;
             color: $blanco;
+            text-transform: uppercase;
             span{
                 border: 6px solid $Secundario;
                 padding: .6rem 1.4rem;
